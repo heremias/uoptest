@@ -76,7 +76,7 @@
             "composer create-project thunder/thunder-project thunder --no-interaction --no-install",
             "cd thunder",
             "ls",
-            "mkdir web"
+            "mkdir web",
             "cp docroot/* web/*",
             "ls",
             "cd web",
