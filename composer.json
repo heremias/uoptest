@@ -75,10 +75,16 @@
             "@prepare-for-pantheon",
             "composer create-project thunder/thunder-project thunder --no-interaction --no-install",
             "cd thunder",
+            "mv docroot web",
             "composer install",
-            "composer drupal:scaffold"
+            "composer drupal:scaffold",
+            "drush --include="web/themes/contrib/bootstrap_storybook" bootstrap_storybook:create TULE",
+            "cd web/themes/custom/tule",
+            "npm install",
+            "cd config",
+            "cp config.example.js config.js"
         ],
-        "lint": "find docroot/modules/custom docroot/themes/custom -name '*.php' -exec php -l {} \\;",
+        "lint": "find web/modules/custom web/themes/custom -name '*.php' -exec php -l {} \\;",
         "code-sniff": [
             "./vendor/bin/phpcs --standard=Drupal --extensions=php,module,inc,install,test,profile,theme,css,info,txt,md --ignore=node_modules,bower_components,vendor ./web/modules/custom",
             "./vendor/bin/phpcs --standard=Drupal --extensions=php,module,inc,install,test,profile,theme,css,info,txt,md --ignore=node_modules,bower_components,vendor ./web/themes/custom",
@@ -121,7 +127,7 @@
                 "drupal/ui_patterns_settings"
             ],
             "locations": {
-                "web-root": "./docroot"
+                "web-root": "./web"
             },
             "file-mapping": {
                 "[project-root]/.editorconfig": false
