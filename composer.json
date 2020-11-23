@@ -42,10 +42,6 @@
         "drupal/slick_paragraphs": "^2.0",
         "drupal/slick_views": "^2.3",
         "drupal/thunder_admin": "4.x-dev",
-        "drupal/ui_patterns": "^1.2",
-        "drupal/ui_patterns_layout_builder": "^1.1",
-        "drupal/ui_patterns_settings": "^1.1",
-        "drupal/wingsuit_companion": "^1.0@beta",
         "oomphinc/composer-installers-extender": "^2.0",
         "thunder/thunder-distribution": "~6.0",
         "vlucas/phpdotenv": "^2.4",
@@ -56,7 +52,6 @@
         "drupal/layout_paragraphs": "^1.0@beta",
         "drupal/grid_layout": "1.x-dev",
         "drupal/layout_builder_operation_link": "^1.0",
-        "drupal/entity_usage": "^2.0@beta",
         "drupal/component": "^1.0@RC"
     },
     "conflict": {
