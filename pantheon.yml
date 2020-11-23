@@ -5,5 +5,5 @@ workflows:
   sync_code:
     after:
       - type: webphp
-        description: Push changes back to GitHub if needed
+        description: Push changes back to GitHub if be needed
         script: private/scripts/quicksilver/quicksilver-pushback/push-back.php
