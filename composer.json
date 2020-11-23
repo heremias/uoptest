@@ -78,7 +78,6 @@
             "ls",
             "composer install",
             "composer drupal:scaffold",
-            "drush --include='web/themes/contrib/bootstrap_storybook' bootstrap_storybook:create TULE",
             "cd web/themes/custom/tule",
             "npm install",
             "cd config",
