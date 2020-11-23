@@ -69,7 +69,7 @@
             "@prepare-for-pantheon",
             "composer create-project thunder/thunder-project thunder --no-interaction --no-install",
             "cd thunder",
-            "ls",
+            "composer update",
             "composer install",
             "composer drupal:scaffold"
         ],
